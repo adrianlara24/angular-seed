@@ -7,11 +7,7 @@ module.exports = {
         options: {
           ident: 'postcss',
           syntax: 'postcss-scss',
-          plugins: () => [
-            require('postcss-import'),
-            require('tailwindcss'),
-            require('autoprefixer'),
-          ],
+          plugins: () => [require('postcss-import'), require('tailwindcss'), require('autoprefixer')],
         },
       },
     ],

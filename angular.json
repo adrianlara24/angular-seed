@@ -51,12 +51,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/assets"
-            ],
-            "styles": [
-              "src/style/styles.scss"
-            ]
+            "assets": ["src/assets"],
+            "styles": ["src/style/styles.scss"]
           },
           "configurations": {
             "production": {
