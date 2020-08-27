@@ -2,6 +2,7 @@ import { NgModule, ModuleWithProviders, Type, Provider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CoreConfigModel } from './model/core-config.model';
+import { CONFIG } from './token/config.token';
 
 const components = [];
 const directives = [];
@@ -19,7 +20,7 @@ export class CoreModule implements ModuleWithProviders<CoreModule> {
   static forRoot(config: CoreConfigModel): ModuleWithProviders<CoreModule> {
     return {
       ngModule: CoreModule,
-      providers: [...services],
+      providers: [{ provide: CONFIG, useValue: config }, ...services],
     };
   }
 }

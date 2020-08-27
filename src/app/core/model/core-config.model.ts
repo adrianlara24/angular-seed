@@ -1,1 +1,3 @@
-export interface CoreConfigModel {}
+export interface CoreConfigModel {
+  url: string;
+}

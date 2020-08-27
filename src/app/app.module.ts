@@ -24,7 +24,7 @@ import { AppLayoutComponent } from './app.layout';
     HttpClientModule,
     NgxsModule.forRoot([]),
     NgxsReduxDevtoolsPluginModule.forRoot({ disabled: environment.production }),
-    CoreModule.forRoot({}),
+    CoreModule.forRoot(environment.config),
     IdentityModule,
     SharedModule,
     AppRoutingModule,
