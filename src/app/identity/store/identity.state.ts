@@ -53,4 +53,10 @@ export class IdentityState {
       })
     );
   }
+
+  @Action(actions.IdentityLogoutAction)
+  logoutAction({ patchState }: StateContext<IdentityStateModel>) {
+    patchState({ isAuth: false, token: undefined, user: undefined });
+    return this._router.navigate(['/', 'session', 'login']);
+  }
 }

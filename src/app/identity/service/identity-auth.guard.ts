@@ -12,7 +12,7 @@ export class IdentityAuthGuard implements CanActivate {
   canActivate() {
     const isAuth = this._store.selectSnapshot(IdentityState.isAuth);
     if (!isAuth) {
-      return this._router.navigate(['/', 'session']);
+      return this._router.navigate(['/', 'session', 'login']);
     }
 
     return isAuth;

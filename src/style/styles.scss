@@ -2,6 +2,12 @@
 @import './../../node_modules/tailwindcss/components';
 @import './../../node_modules/tailwindcss/utilities';
 
+@import './base/index.scss';
+@import './core/index.scss';
+@import './feature/index.scss';
+@import './identity/index.scss';
+@import './shared/index.scss';
+
 html,
 body {
   font-family: 'Nunito';

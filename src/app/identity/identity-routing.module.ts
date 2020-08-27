@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: 'session',
     component: IdentityLayoutComponent,
-    children: [{ path: '', component: IdentityLoginPageComponent }],
+    children: [{ path: 'login', component: IdentityLoginPageComponent }],
   },
 ];
 
