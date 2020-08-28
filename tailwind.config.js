@@ -1,5 +1,11 @@
+require('dotenv').config();
+const isProduction = process.env.PRODUCTION || false;
+
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.ts'],
+  purge: {
+    enabled: isProduction,
+    content: ['./src/**/*.html', './src/**/*.ts', './src/**/*.scss'],
+  },
   theme: {
     extend: {
       colors: {

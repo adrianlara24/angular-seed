@@ -1,6 +1,6 @@
-@import './../../node_modules/tailwindcss';
-@import './../../node_modules/tailwindcss/components';
-@import './../../node_modules/tailwindcss/utilities';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @import './base/index.scss';
 @import './core/index.scss';
